@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/search_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/searchbox_background_color" android:paddingLeft="16.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="@dimen/search_text_size" android:id="@id/search_view" android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_weight="1.0" android:inputType="textFilter" />
+                <ImageView android:id="@id/search_close_button" android:background="?android:selectableItemBackground" android:padding="6.0dip" android:visibility="gone" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_close_dk" />
+            </LinearLayout>
+            <View android:id="@id/searchbox_divider" android:background="@color/background_dialer_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/dialtacts_frame" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <View android:background="#33999999" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <View android:id="@id/dialtacts_bottom_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/dialtacts_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/search_frame" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/fake_action_bar" android:background="@color/actionbar_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/fake_action_bar_height">
+                <ImageButton android:layout_gravity="start|bottom|center" android:id="@id/call_history_button" android:background="?android:selectableItemBackground" android:layout_width="@dimen/fake_menu_button_min_width" android:layout_height="fill_parent" android:src="@drawable/ic_menu_history_dk" android:contentDescription="@string/action_menu_call_history_description" />
+                <ImageButton android:layout_gravity="bottom|center" android:id="@id/dialpad_button" android:background="?android:selectableItemBackground" android:layout_width="@dimen/fake_menu_button_min_width" android:layout_height="fill_parent" android:src="@drawable/ic_menu_dialpad_dk" android:contentDescription="@string/action_menu_dialpad_button" />
+                <ImageButton android:layout_gravity="end|bottom|center" android:id="@id/overflow_menu" android:background="?android:selectableItemBackground" android:layout_width="@dimen/fake_menu_button_min_width" android:layout_height="fill_parent" android:src="@drawable/ic_menu_overflow_dk" android:contentDescription="@string/action_menu_overflow_description" />
+            </FrameLayout>
+        </LinearLayout>>
+</FrameLayout>
+</LinearLayout>

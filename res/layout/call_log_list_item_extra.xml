@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/badge_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/favorite_contacts_separator_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/call_log_outer_margin" android:layout_marginEnd="@dimen/call_log_outer_margin" />
+    <LinearLayout android:id="@id/badge_link_container" android:background="?android:selectableItemBackground" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/call_log_outer_margin" android:paddingEnd="@dimen/call_log_outer_margin">
+        <ImageView android:id="@id/badge_image" android:padding="@dimen/call_log_outer_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/dialpad_primary_text_color" android:layout_gravity="center_vertical" android:id="@id/badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/dismiss_button" android:background="?android:selectableItemBackground" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_dk" android:contentDescription="@string/description_dismiss" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_gravity="center_horizontal" android:id="@id/dialpad" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="@dimen/dialpad_vertical_margin" android:stretchColumns="0,1,2" android:layout_weight="@integer/dialpad_layout_weight_dialpad" android:background="#ffffff" android:layoutDirection="ltr" android:paddingStart="5.0dip" android:paddingEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0" >
+        <com.android.dialer.dialpad.DialpadKeyButton android:id="@id/one"  android:background="@drawable/dial_num_background" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center"  android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_1_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/two" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView  android:layout_below="@id/dialpad_key_number" android:textSize="@dimen/dialpad_key_letters_size" android:textColor="#606060" android:id="@id/dialpad_key_letters"  android:layout_width="wrap_content" android:visibility="gone" android:layout_height="wrap_content"  />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_2_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/three" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView  android:layout_below="@id/dialpad_key_number" android:textSize="@dimen/dialpad_key_letters_size" android:textColor="#606060" android:id="@id/dialpad_key_letters"  android:layout_width="wrap_content" android:visibility="gone" android:layout_height="wrap_content"  />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_3_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+     <!--    <include android:id="@id/two" layout="@layout/dialpad_key" /> -->
+     <!--    <include android:id="@id/three" layout="@layout/dialpad_key" /> -->
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/four" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_4_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/five" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView  android:layout_below="@id/dialpad_key_number" android:textSize="@dimen/dialpad_key_letters_size" android:textColor="#606060" android:id="@id/dialpad_key_letters"  android:layout_width="wrap_content" android:visibility="gone" android:layout_height="wrap_content"  />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_5_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/six" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView  android:layout_below="@id/dialpad_key_number" android:textSize="@dimen/dialpad_key_letters_size" android:textColor="#606060" android:id="@id/dialpad_key_letters"  android:layout_width="wrap_content" android:visibility="gone" android:layout_height="wrap_content"  />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_6_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+       <!--  <include android:id="@id/four" layout="@layout/dialpad_key" />
+        <include android:id="@id/five" layout="@layout/dialpad_key" />
+        <include android:id="@id/six" layout="@layout/dialpad_key" /> -->
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/seven" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_7_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/eight" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView  android:layout_below="@id/dialpad_key_number" android:textSize="@dimen/dialpad_key_letters_size" android:textColor="#606060" android:id="@id/dialpad_key_letters"  android:layout_width="wrap_content" android:visibility="gone" android:layout_height="wrap_content"  />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_8_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/nine" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView  android:layout_below="@id/dialpad_key_number" android:textSize="@dimen/dialpad_key_letters_size" android:textColor="#606060" android:id="@id/dialpad_key_letters"  android:layout_width="wrap_content" android:visibility="gone" android:layout_height="wrap_content"  />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_9_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+      <!--   <include android:id="@id/seven" layout="@layout/dialpad_key" />
+        <include android:id="@id/eight" layout="@layout/dialpad_key" />
+        <include android:id="@id/nine" layout="@layout/dialpad_key" /> -->
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/star" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_star_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/zero" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView  android:layout_below="@id/dialpad_key_number" android:textSize="@dimen/dialpad_key_letters_size" android:textColor="#606060" android:id="@id/dialpad_key_letters"  android:layout_width="wrap_content" android:visibility="gone" android:layout_height="wrap_content"  />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_0_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+        <com.android.dialer.dialpad.DialpadKeyButton android:background="@drawable/dial_num_background" android:id="@id/pound" android:focusable="true" android:clickable="true" style="@style/DialtactsDialpadButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content"  android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dialpad_key_numbers_size" android:textColor="#454545" android:id="@id/dialpad_key_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <ImageView android:id="@id/dialpad_key_voicemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dial_num_pound_normal" android:scaleType="fitStart"  />
+            </LinearLayout>
+        </com.android.dialer.dialpad.DialpadKeyButton>
+    </TableRow>
+</TableLayout>

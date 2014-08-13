@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <bitmap android:src="@drawable/endcall_disable" android:tileMode="repeat" />
+    </item>
+    <item android:state_pressed="true" android:drawable="@drawable/endcall_active_newui" />
+    <item>
+        <layer-list>
+            <item android:state_pressed="true" android:drawable="@drawable/endcall_background_texture_newui" />
+            <item android:drawable="@drawable/btn_compound_background" />
+        </layer-list>
+    </item>
+</selector>

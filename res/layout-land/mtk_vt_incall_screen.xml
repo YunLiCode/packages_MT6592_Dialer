@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/VTInCallCanvas" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/VTHighVideoContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.mediatek.incallui.vt.VTSurfaceView android:id="@id/VTHighVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/vt_incall_screen_button_interval" />
+            <ImageButton android:id="@id/VTHighUp" android:layout_width="@dimen/vt_incall_screen_image_button_width" android:layout_height="@dimen/vt_incall_screen_image_button_height" android:layout_marginTop="50.0dip" android:layout_alignTop="@id/VTHighVideo" android:layout_marginStart="@dimen/vt_incall_screen_high_video_image_button_margin_edge" android:layout_alignStart="@id/VTHighVideo" />
+            <ImageButton android:id="@id/VTHighDown" android:layout_width="@dimen/vt_incall_screen_image_button_width" android:layout_height="@dimen/vt_incall_screen_image_button_height" android:layout_marginBottom="50.0dip" android:layout_alignBottom="@id/VTHighVideo" android:layout_marginStart="@dimen/vt_incall_screen_high_video_image_button_margin_edge" android:layout_alignStart="@id/VTHighVideo" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/VTLowVideoContainer" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vt_incall_screen_button_interval" android:layout_marginStart="@dimen/vt_incall_screen_button_interval">
+            <com.mediatek.incallui.vt.VTSurfaceView android:id="@id/VTLowVideo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/VTLowUp" android:layout_width="@dimen/vt_incall_screen_image_button_height" android:layout_height="@dimen/vt_incall_screen_image_button_height" android:layout_marginTop="@dimen/vt_incall_screen_low_video_image_button_margin_edge" android:layout_alignTop="@id/VTLowVideo" android:layout_marginStart="@dimen/vt_incall_screen_low_video_image_button_margin_edge" android:layout_alignStart="@id/VTLowVideo" />
+            <ImageButton android:id="@id/VTLowDown" android:layout_width="@dimen/vt_incall_screen_image_button_height" android:layout_height="@dimen/vt_incall_screen_image_button_height" android:layout_marginBottom="@dimen/vt_incall_screen_low_video_image_button_margin_edge" android:layout_alignBottom="@id/VTLowVideo" android:layout_marginStart="@dimen/vt_incall_screen_low_video_image_button_margin_edge" android:layout_alignStart="@id/VTLowVideo" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="invalidChipBackground" format="reference" />
+    <attr name="chipBackground" format="reference" />
+    <attr name="chipBackgroundPressed" format="reference" />
+    <attr name="chipDelete" format="reference" />
+    <attr name="chipAlternatesLayout" format="reference" />
+    <attr name="chipPadding" format="reference" />
+    <attr name="chipHeight" format="reference" />
+    <attr name="chipFontSize" format="reference" />
+    <attr name="enableButtonText" format="string" />
+    <attr name="disableButtonText" format="string" />
+    <attr name="changeNumButtonText" format="string" />
+    <attr name="confirmMode">
+        <enum name="confirm" value="0" />
+        <enum name="activation" value="1" />
+    </attr>
+    <attr name="serviceClass">
+        <enum name="voice" value="1" />
+        <enum name="data" value="2" />
+    </attr>
+    <attr name="reason">
+        <enum name="unconditional" value="0" />
+        <enum name="busy" value="1" />
+        <enum name="no_reply" value="2" />
+        <enum name="not_reachable" value="3" />
+    </attr>
+    <attr name="targetDrawables" format="reference" />
+    <attr name="targetDescriptions" format="reference" />
+    <attr name="directionDescriptions" format="reference" />
+    <attr name="handleDrawable" format="reference" />
+    <attr name="outerRingDrawable" format="reference" />
+    <attr name="pointDrawable" format="reference" />
+    <attr name="innerRadius" format="dimension" />
+    <attr name="outerRadius" format="dimension" />
+    <attr name="glowRadius" format="dimension" />
+    <attr name="vibrationDuration" format="integer" />
+    <attr name="snapMargin" format="dimension" />
+    <attr name="feedbackCount" format="integer" />
+    <attr name="alwaysTrackFinger" format="boolean" />
+    <attr name="allowScaling" format="boolean" />
+    <attr name="list_item_height" format="dimension" />
+    <attr name="list_section_header_height" format="dimension" />
+    <attr name="activated_background" format="reference" />
+    <attr name="section_header_background" format="reference" />
+    <attr name="list_item_divider" format="reference" />
+    <attr name="list_item_padding_top" format="dimension" />
+    <attr name="list_item_padding_right" format="dimension" />
+    <attr name="list_item_padding_bottom" format="dimension" />
+    <attr name="list_item_padding_left" format="dimension" />
+    <attr name="list_item_gap_between_image_and_text" format="dimension" />
+    <attr name="list_item_gap_between_label_and_data" format="dimension" />
+    <attr name="list_item_presence_icon_margin" format="dimension" />
+    <attr name="list_item_presence_icon_size" format="dimension" />
+    <attr name="list_item_photo_size" format="dimension" />
+    <attr name="list_item_profile_photo_size" format="dimension" />
+    <attr name="list_item_prefix_highlight_color" format="color" />
+    <attr name="list_item_header_text_indent" format="dimension" />
+    <attr name="list_item_header_text_color" format="color" />
+    <attr name="list_item_header_text_size" format="dimension" />
+    <attr name="list_item_header_height" format="dimension" />
+    <attr name="list_item_header_underline_height" format="dimension" />
+    <attr name="list_item_header_underline_color" format="color" />
+    <attr name="list_item_contacts_count_text_color" format="color" />
+    <attr name="list_item_text_indent" format="dimension" />
+    <attr name="list_item_contacts_count_text_size" format="dimension" />
+    <attr name="list_item_data_width_weight" format="integer" />
+    <attr name="list_item_label_width_weight" format="integer" />
+    <attr name="list_item_call_button_padding" format="dimension" />
+    <attr name="contact_browser_list_padding_left" format="dimension" />
+    <attr name="contact_browser_list_padding_right" format="dimension" />
+    <attr name="contact_browser_background" format="reference" />
+    <attr name="direction" format="string" />
+    <attr name="ratio" format="float" />
+    <attr name="favorites_padding_bottom" format="dimension" />
+    <attr name="call_log_primary_text_color" format="color" />
+    <attr name="call_log_primary_background_color" format="color" />
+    <attr name="call_log_secondary_text_color" format="color" />
+    <attr name="call_log_secondary_background_color" format="color" />
+    <attr name="call_log_header_color" format="color" />
+    <attr name="call_log_voicemail_status_height" format="dimension" />
+    <attr name="call_log_voicemail_status_background_color" format="color" />
+    <attr name="call_log_voicemail_status_text_color" format="color" />
+    <attr name="call_log_voicemail_status_action_text_color" format="color" />
+</resources>

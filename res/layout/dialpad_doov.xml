@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dialpad_doov" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:stretchColumns="0,1,2" android:layout_weight="@integer/dialpad_layout_weight_dialpad" android:layoutDirection="ltr" android:paddingStart="0.0dip" android:paddingEnd="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/one" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/two" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/three" layout="@layout/dialpad_key_doov" />
+    </TableRow>
+    <TableRow android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/four" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/five" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/six" layout="@layout/dialpad_key_doov" />
+    </TableRow>
+    <TableRow android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/seven" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/eight" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/nine" layout="@layout/dialpad_key_doov" />
+    </TableRow>
+    <TableRow android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/star" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/zero" layout="@layout/dialpad_key_doov" />
+        <include android:id="@id/pound" layout="@layout/dialpad_key_doov" />
+    </TableRow>
+</TableLayout>

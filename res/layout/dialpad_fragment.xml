@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.android.dialer.dialpad.DialpadFragment$DialpadSlidingLinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/spacer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <view android:orientation="vertical" android:id="@id/top" android:background="#ffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" android:layoutDirection="ltr" android:paddingStart="@dimen/dialpad_horizontal_margin" android:paddingEnd="@dimen/dialpad_horizontal_margin" class="com.android.dialer.dialpad.DialpadFragment$HoverIgnoringLinearLayout">
+        <LinearLayout  android:gravity="center" android:id="@id/digits_container" android:layout_width="fill_parent" android:layout_height="0.0px"  android:layout_marginTop="@dimen/dialpad_vertical_margin" android:layout_weight="@integer/dialpad_layout_weight_digits">
+            <com.android.dialer.dialpad.DigitsEditText android:textAppearance="@style/DialtactsDigitsTextAppearance" android:textColor="#505050" android:gravity="center" android:id="@id/digits" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:nextFocusRight="@id/overflow_menu" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:textCursorDrawable="@null" android:fontFamily="sans-serif-light" />
+            <ImageButton android:state_enabled="false" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/deleteButton" android:background="?android:selectableItemBackground" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_dial_action_delete" android:contentDescription="@string/description_delete_button" />
+        </LinearLayout>
+        <include layout="@layout/dialpad" />
+        <View style="@style/DialpadHorizontalSeparator" android:visibility="gone"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/dialButtonContainer" android:background="#ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/fake_action_bar_height" android:layoutDirection="locale">
+            <ImageButton android:layout_gravity="start|bottom|center" android:id="@id/call_history_on_dialpad_button" android:background="@drawable/btn_call" android:layout_width="@dimen/fake_menu_button_min_width" android:layout_height="fill_parent" android:src="@drawable/ic_menu_history_dk" android:contentDescription="@string/action_menu_call_history_description" />
+            <ImageButton android:state_enabled="false" android:layout_gravity="center" android:id="@id/dialButton" android:background="@drawable/dial_call" android:layout_width="0.0dip" android:layout_height="45dp" android:layout_weight="1.0" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:paddingLeft="20dp" android:paddingRight="20dp" android:contentDescription="@string/description_dial_button" />
+            <Button android:layout_gravity="center" android:id="@id/eccDialButton" android:background="@drawable/incall_menu_background_c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergencycall_ext" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="end|bottom|center" android:id="@id/overflow_menu_on_dialpad" android:background="@drawable/btn_call" android:layout_width="@dimen/fake_menu_button_min_width" android:layout_height="fill_parent" android:src="@drawable/ic_menu_overflow_dk" android:contentDescription="@string/action_menu_overflow_description" />
+        </LinearLayout>
+        <ListView android:id="@id/dialpadChooser" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chip_padding">8.0dip</dimen>
+    <dimen name="chip_height">32.0dip</dimen>
+    <dimen name="chip_text_size">14.0sp</dimen>
+    <dimen name="button_grid_layout_button_width">195.0dip</dimen>
+    <dimen name="button_grid_layout_button_height">75.0dip</dimen>
+    <dimen name="dialpad_additional_button_width">195.0dip</dimen>
+    <dimen name="dialpad_additional_button_height">85.0dip</dimen>
+    <dimen name="detail_contact_photo_margin">8.0dip</dimen>
+</resources>

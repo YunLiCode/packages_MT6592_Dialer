@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/show_voicemails_only" android:orderInCategory="1" android:title="@string/menu_show_voicemails_only" android:showAsAction="withText" />
+    <item android:id="@id/show_all_calls" android:orderInCategory="1" android:title="@string/menu_show_all_calls" android:showAsAction="withText" />
+    <item android:id="@id/delete_all" android:orderInCategory="1" android:title="@string/recentCalls_delete" android:showAsAction="withText" />
+    <item android:id="@id/show_auto_rejected_calls" android:orderInCategory="1" android:title="@string/call_log_auto_rejected_label" android:showAsAction="withText" />
+    <item android:icon="@drawable/mtk_ic_btn_resource" android:id="@id/choose_resources" android:visible="false" android:title="@string/choose_resources_header" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_delete_dk" android:id="@id/menu_remove_from_call_log" android:orderInCategory="10" android:title="@string/recentCalls_removeFromRecentList" android:onClick="onMenuRemoveFromCallLog" android:showAsAction="ifRoom" />
+    <item android:id="@id/menu_edit_number_before_call" android:orderInCategory="20" android:title="@string/recentCalls_editNumberBeforeCall" android:onClick="onMenuEditNumberBeforeCall" />
+</menu>
